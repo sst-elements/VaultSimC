@@ -1,0 +1,562 @@
+Enabled checks:
+    clang-analyzer-apiModeling.StdCLibraryFunctions
+    clang-analyzer-apiModeling.TrustNonnull
+    clang-analyzer-apiModeling.google.GTest
+    clang-analyzer-apiModeling.llvm.CastValue
+    clang-analyzer-apiModeling.llvm.ReturnValue
+    clang-analyzer-core.CallAndMessage
+    clang-analyzer-core.DivideZero
+    clang-analyzer-core.DynamicTypePropagation
+    clang-analyzer-core.NonNullParamChecker
+    clang-analyzer-core.NonnilStringConstants
+    clang-analyzer-core.NullDereference
+    clang-analyzer-core.StackAddrEscapeBase
+    clang-analyzer-core.StackAddressEscape
+    clang-analyzer-core.UndefinedBinaryOperatorResult
+    clang-analyzer-core.VLASize
+    clang-analyzer-core.builtin.BuiltinFunctions
+    clang-analyzer-core.builtin.NoReturnFunctions
+    clang-analyzer-core.uninitialized.ArraySubscript
+    clang-analyzer-core.uninitialized.Assign
+    clang-analyzer-core.uninitialized.Branch
+    clang-analyzer-core.uninitialized.CapturedBlockVariable
+    clang-analyzer-core.uninitialized.UndefReturn
+    clang-analyzer-cplusplus.InnerPointer
+    clang-analyzer-cplusplus.Move
+    clang-analyzer-cplusplus.NewDelete
+    clang-analyzer-cplusplus.NewDeleteLeaks
+    clang-analyzer-cplusplus.PureVirtualCall
+    clang-analyzer-cplusplus.SelfAssignment
+    clang-analyzer-cplusplus.SmartPtr
+    clang-analyzer-cplusplus.VirtualCallModeling
+    clang-analyzer-deadcode.DeadStores
+    clang-analyzer-fuchsia.HandleChecker
+    clang-analyzer-nullability.NullPassedToNonnull
+    clang-analyzer-nullability.NullReturnedFromNonnull
+    clang-analyzer-nullability.NullabilityBase
+    clang-analyzer-nullability.NullableDereferenced
+    clang-analyzer-nullability.NullablePassedToNonnull
+    clang-analyzer-nullability.NullableReturnedFromNonnull
+    clang-analyzer-optin.cplusplus.UninitializedObject
+    clang-analyzer-optin.cplusplus.VirtualCall
+    clang-analyzer-optin.mpi.MPI-Checker
+    clang-analyzer-optin.osx.OSObjectCStyleCast
+    clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker
+    clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker
+    clang-analyzer-optin.performance.GCDAntipattern
+    clang-analyzer-optin.performance.Padding
+    clang-analyzer-optin.portability.UnixAPI
+    clang-analyzer-osx.API
+    clang-analyzer-osx.MIG
+    clang-analyzer-osx.NSOrCFErrorDerefChecker
+    clang-analyzer-osx.NumberObjectConversion
+    clang-analyzer-osx.OSObjectRetainCount
+    clang-analyzer-osx.ObjCProperty
+    clang-analyzer-osx.SecKeychainAPI
+    clang-analyzer-osx.cocoa.AtSync
+    clang-analyzer-osx.cocoa.AutoreleaseWrite
+    clang-analyzer-osx.cocoa.ClassRelease
+    clang-analyzer-osx.cocoa.Dealloc
+    clang-analyzer-osx.cocoa.IncompatibleMethodTypes
+    clang-analyzer-osx.cocoa.Loops
+    clang-analyzer-osx.cocoa.MissingSuperCall
+    clang-analyzer-osx.cocoa.NSAutoreleasePool
+    clang-analyzer-osx.cocoa.NSError
+    clang-analyzer-osx.cocoa.NilArg
+    clang-analyzer-osx.cocoa.NonNilReturnValue
+    clang-analyzer-osx.cocoa.ObjCGenerics
+    clang-analyzer-osx.cocoa.RetainCount
+    clang-analyzer-osx.cocoa.RetainCountBase
+    clang-analyzer-osx.cocoa.RunLoopAutoreleaseLeak
+    clang-analyzer-osx.cocoa.SelfInit
+    clang-analyzer-osx.cocoa.SuperDealloc
+    clang-analyzer-osx.cocoa.UnusedIvars
+    clang-analyzer-osx.cocoa.VariadicMethodTypes
+    clang-analyzer-osx.coreFoundation.CFError
+    clang-analyzer-osx.coreFoundation.CFNumber
+    clang-analyzer-osx.coreFoundation.CFRetainRelease
+    clang-analyzer-osx.coreFoundation.containers.OutOfBounds
+    clang-analyzer-osx.coreFoundation.containers.PointerSizedValues
+    clang-analyzer-security.FloatLoopCounter
+    clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling
+    clang-analyzer-security.insecureAPI.SecuritySyntaxChecker
+    clang-analyzer-security.insecureAPI.UncheckedReturn
+    clang-analyzer-security.insecureAPI.bcmp
+    clang-analyzer-security.insecureAPI.bcopy
+    clang-analyzer-security.insecureAPI.bzero
+    clang-analyzer-security.insecureAPI.decodeValueOfObjCType
+    clang-analyzer-security.insecureAPI.getpw
+    clang-analyzer-security.insecureAPI.gets
+    clang-analyzer-security.insecureAPI.mkstemp
+    clang-analyzer-security.insecureAPI.mktemp
+    clang-analyzer-security.insecureAPI.rand
+    clang-analyzer-security.insecureAPI.strcpy
+    clang-analyzer-security.insecureAPI.vfork
+    clang-analyzer-unix.API
+    clang-analyzer-unix.DynamicMemoryModeling
+    clang-analyzer-unix.Malloc
+    clang-analyzer-unix.MallocSizeof
+    clang-analyzer-unix.MismatchedDeallocator
+    clang-analyzer-unix.Vfork
+    clang-analyzer-unix.cstring.BadSizeArg
+    clang-analyzer-unix.cstring.CStringModeling
+    clang-analyzer-unix.cstring.NullArg
+    clang-analyzer-valist.CopyToSelf
+    clang-analyzer-valist.Uninitialized
+    clang-analyzer-valist.Unterminated
+    clang-analyzer-valist.ValistBase
+    misc-unused-alias-decls
+    misc-unused-parameters
+    misc-unused-using-decls
+    modernize-avoid-bind
+    modernize-avoid-c-arrays
+    modernize-concat-nested-namespaces
+    modernize-deprecated-headers
+    modernize-deprecated-ios-base-aliases
+    modernize-loop-convert
+    modernize-make-shared
+    modernize-make-unique
+    modernize-pass-by-value
+    modernize-raw-string-literal
+    modernize-redundant-void-arg
+    modernize-replace-auto-ptr
+    modernize-replace-random-shuffle
+    modernize-return-braced-init-list
+    modernize-shrink-to-fit
+    modernize-unary-static-assert
+    modernize-use-auto
+    modernize-use-bool-literals
+    modernize-use-default-member-init
+    modernize-use-emplace
+    modernize-use-equals-default
+    modernize-use-equals-delete
+    modernize-use-nodiscard
+    modernize-use-noexcept
+    modernize-use-nullptr
+    modernize-use-transparent-functors
+    modernize-use-uncaught-exceptions
+    modernize-use-using
+
+clang-apply-replacements version 10.0.0
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -export-fixes /tmp/tmp05ztbhga/tmpbv1_gamx.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/cpu.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:82:5: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef map<unsigned, MemHierarchy::MemEvent*> t2MEMap_t;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    using t2MEMap_t = map<unsigned int, MemHierarchy::MemEvent *>
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:82:61: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef map<unsigned, MemHierarchy::MemEvent*> t2MEMap_t;
+                                                            ^
+/home/sabbir/sst-elements-org/VaultSimC/cpu.cpp:19:10: warning: inclusion of deprecated C++ header 'stdio.h'; consider using 'cstdio' instead [modernize-deprecated-headers]
+#include <stdio.h>
+         ^~~~~~~~~
+         <cstdio>
+/home/sabbir/sst-elements-org/VaultSimC/cpu.cpp:20:10: warning: inclusion of deprecated C++ header 'stdlib.h'; consider using 'cstdlib' instead [modernize-deprecated-headers]
+#include <stdlib.h>
+         ^~~~~~~~~~
+         <cstdlib>
+/home/sabbir/sst-elements-org/VaultSimC/cpu.cpp:93:5: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+    MemRespEvent *event =
+    ^~~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/VaultSimC/cpu.cpp:95:18: warning: use nullptr [modernize-use-nullptr]
+    if (event == NULL) {
+                 ^~~~
+                 nullptr
+/home/sabbir/sst-elements-org/VaultSimC/cpu.cpp:102:10: warning: use auto when declaring iterators [modernize-use-auto]
+    for (thrSet_t::iterator i = thrOutstanding.begin(); i != e; ++i) {
+         ^~~~~~~~~~~~~~~~~~
+         auto
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:67:3: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef set<uint64_t> memSet_t;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  using memSet_t = set<uint64_t>
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:68:3: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef vector<memSet_t> thrSet_t;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  using thrSet_t = vector<memSet_t>
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:69:3: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef vector<int> coreVec_t;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  using coreVec_t = vector<int>
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:26:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t ReqId;
+^~~~~~~~~~~~~~~~~~~~~~
+using ReqId = uint64_t
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:26:23: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t ReqId;
+                      ^
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:41:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:44:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemReqEvent() {} // For Serialization only
+    ^             ~~
+                  = default;
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:78:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:81:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemRespEvent() {} // For Serialization only
+    ^              ~~
+                   = default;
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -export-fixes /tmp/tmp05ztbhga/tmpwj3k62ru.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/app.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:82:5: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef map<unsigned, MemHierarchy::MemEvent*> t2MEMap_t;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    using t2MEMap_t = map<unsigned int, MemHierarchy::MemEvent *>
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:82:61: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef map<unsigned, MemHierarchy::MemEvent*> t2MEMap_t;
+                                                            ^
+/home/sabbir/sst-elements-org/VaultSimC/app.cpp:19:10: warning: inclusion of deprecated C++ header 'stdio.h'; consider using 'cstdio' instead [modernize-deprecated-headers]
+#include <stdio.h>
+         ^~~~~~~~~
+         <cstdio>
+/home/sabbir/sst-elements-org/VaultSimC/app.cpp:20:10: warning: inclusion of deprecated C++ header 'stdlib.h'; consider using 'cstdlib' instead [modernize-deprecated-headers]
+#include <stdlib.h>
+         ^~~~~~~~~~
+         <cstdlib>
+/home/sabbir/sst-elements-org/VaultSimC/app.cpp:21:10: warning: inclusion of deprecated C++ header 'stdlib.h'; consider using 'cstdlib' instead [modernize-deprecated-headers]
+#include <stdlib.h>
+         ^~~~~~~~~~
+         <cstdlib>
+/home/sabbir/sst-elements-org/VaultSimC/app.cpp:24:8: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static unsigned int missRate[][3] = {{0,51,32},   //app 0
+       ^
+/home/sabbir/sst-elements-org/VaultSimC/app.cpp:26:8: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static unsigned int isLoad[] = {3,32}; // out of 64
+       ^
+/home/sabbir/sst-elements-org/VaultSimC/app.cpp:63:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemReqEvent *event = new MemReqEvent((ReqId)this, addr, isWrite, 0, 0 );
+    ^~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/VaultSimC/app.cpp:67:12: warning: use nullptr [modernize-use-nullptr]
+    return 0;
+           ^
+           nullptr
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:67:3: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef set<uint64_t> memSet_t;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  using memSet_t = set<uint64_t>
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:68:3: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef vector<memSet_t> thrSet_t;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  using thrSet_t = vector<memSet_t>
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:69:3: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef vector<int> coreVec_t;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  using coreVec_t = vector<int>
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:26:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t ReqId;
+^~~~~~~~~~~~~~~~~~~~~~
+using ReqId = uint64_t
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:26:23: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t ReqId;
+                      ^
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:41:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:44:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemReqEvent() {} // For Serialization only
+    ^             ~~
+                  = default;
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:78:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:81:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemRespEvent() {} // For Serialization only
+    ^              ~~
+                   = default;
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -export-fixes /tmp/tmp05ztbhga/tmp7xzemfmp.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:95:12: warning: Value stored to 'memSize' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    size_t memSize = MEMSIZE;
+           ^
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:95:12: note: Value stored to 'memSize' during its initialization is never read
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:112:35: warning: parameter 'phase' is unused [misc-unused-parameters]
+void VaultSimC::init(unsigned int phase)
+                                  ^~~~~
+                                   /*phase*/
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:114:22: warning: use nullptr [modernize-use-nullptr]
+    SST::Event *ev = NULL;
+                     ^~~~
+                     nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:115:14: warning: Although the value stored to 'ev' is used in the enclosing expression, the value is never actually read from 'ev' [clang-analyzer-deadcode.DeadStores]
+    while ( (ev = m_memChan->recvInitData()) != NULL ) {
+             ^
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:115:14: note: Although the value stored to 'ev' is used in the enclosing expression, the value is never actually read from 'ev'
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:115:49: warning: use nullptr [modernize-use-nullptr]
+    while ( (ev = m_memChan->recvInitData()) != NULL ) {
+                                                ^~~~
+                                                nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:117:9: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+        MemEvent *me = dynamic_cast<MemEvent*>(ev);
+        ^~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:255:32: warning: parameter 'current' is unused [misc-unused-parameters]
+bool VaultSimC::clock( Cycle_t current ) {
+                               ^~~~~~~
+                                /*current*/
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:256:21: warning: use nullptr [modernize-use-nullptr]
+    SST::Event *e = 0;
+                    ^
+                    nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:257:12: warning: use nullptr [modernize-use-nullptr]
+    while (NULL != (e = m_memChan->recv())) {
+           ^~~~
+           nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:259:9: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+        MemReqEvent *event  = dynamic_cast<MemReqEvent*>(e);
+        ^~~~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:260:13: warning: use nullptr [modernize-use-nullptr]
+        if (NULL == event) {
+            ^~~~
+            nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:268:9: warning: use nullptr [modernize-use-nullptr]
+    e = 0;
+        ^
+        nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:269:12: warning: use nullptr [modernize-use-nullptr]
+    while (NULL != (e = delayLine->recv())) {
+           ^~~~
+           nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:271:9: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+        MemReqEvent *event  = dynamic_cast<MemReqEvent*>(e);
+        ^~~~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:272:13: warning: use nullptr [modernize-use-nullptr]
+        if (NULL == event) {
+            ^~~~
+            nullptr
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:275:13: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+            MemRespEvent *respEvent = new MemRespEvent(
+            ^~~~~~~~~~~~
+            auto
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:82:5: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef map<unsigned, MemHierarchy::MemEvent*> t2MEMap_t;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    using t2MEMap_t = map<unsigned int, MemHierarchy::MemEvent *>
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:86:5: warning: use '= delete' to prohibit calling of a special member function [modernize-use-equals-delete]
+    VaultSimC( const VaultSimC& c );
+    ^
+                                    = delete
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:25:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t Addr;
+^~~~~~~~~~~~~~~~~~~~~
+using Addr = uint64_t
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:26:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t ReqId;
+^~~~~~~~~~~~~~~~~~~~~~
+using ReqId = uint64_t
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:41:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:44:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemReqEvent() {} // For Serialization only
+    ^             ~~
+                  = default;
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:78:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:81:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemRespEvent() {} // For Serialization only
+    ^              ~~
+                   = default;
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -export-fixes /tmp/tmp05ztbhga/tmp1w3d60_n.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:81:5: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef SST::Link memChan_t;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+    using memChan_t = SST::Link
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:82:5: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef map<unsigned, MemHierarchy::MemEvent*> t2MEMap_t;
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    using t2MEMap_t = map<unsigned int, MemHierarchy::MemEvent *>
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:82:61: warning: use 'using' instead of 'typedef' [modernize-use-using]
+    typedef map<unsigned, MemHierarchy::MemEvent*> t2MEMap_t;
+                                                            ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:66:7: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+      char bus_name[50];
+      ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:88:13: warning: use nullptr [modernize-use-nullptr]
+    toMem = 0;
+            ^
+            nullptr
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:117:22: warning: use nullptr [modernize-use-nullptr]
+    SST::Event *ev = NULL;
+                     ^~~~
+                     nullptr
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:118:45: warning: use nullptr [modernize-use-nullptr]
+    while ( (ev = toCPU->recvInitData()) != NULL ) {
+                                            ^~~~
+                                            nullptr
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:119:9: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+        MemEvent *me = dynamic_cast<MemEvent*>(ev);
+        ^~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:133:25: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                        MemEvent *newEv = new MemEvent(this, addr,
+                        ^~~~~~~~
+                        auto
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:181:19: warning: use nullptr [modernize-use-nullptr]
+  SST::Event* e = 0;
+                  ^
+                  nullptr
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:183:3: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  int tm[2] = {0,0}; //recv send
+  ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:184:3: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  int tc[2] = {0,0};
+  ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:188:5: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+    MemReqEvent *event  = dynamic_cast<MemReqEvent*>(e);
+    ^~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:192:18: warning: use nullptr [modernize-use-nullptr]
+    if (event == NULL) {
+                 ^~~~
+                 nullptr
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:219:7: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+      MemRespEvent *event  = dynamic_cast<MemRespEvent*>(e);
+      ^~~~~~~~~~~~
+      auto
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:220:20: warning: use nullptr [modernize-use-nullptr]
+      if (event == NULL) {
+                   ^~~~
+                   nullptr
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:235:3: warning: use range-based for loop instead [modernize-loop-convert]
+  for (memChans_t::iterator i = m_memChans.begin();
+  ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      (auto m_memChan : m_memChans)
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:235:8: warning: use auto when declaring iterators [modernize-use-auto]
+  for (memChans_t::iterator i = m_memChans.begin();
+       ^
+note: this fix will not be applied because it overlaps with another fix
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:239:7: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+      MemRespEvent *event  = dynamic_cast<MemRespEvent*>(e);
+      ^~~~~~~~~~~~
+      auto
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:240:20: warning: use nullptr [modernize-use-nullptr]
+      if (event == NULL) {
+                   ^~~~
+                   nullptr
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:76:3: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef vector<memChan_t*> memChans_t;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  using memChans_t = vector<memChan_t *>
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:80:3: warning: use '= delete' to prohibit calling of a special member function [modernize-use-equals-delete]
+  logicLayer( const logicLayer& c );
+  ^
+                                    = delete
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:97:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+    Statistic<uint64_t>*  bwUsedToCpu[2];
+    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:98:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+    Statistic<uint64_t>*  bwUsedToMem[2];
+    ^
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:26:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t ReqId;
+^~~~~~~~~~~~~~~~~~~~~~
+using ReqId = uint64_t
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:41:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:44:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemReqEvent() {} // For Serialization only
+    ^             ~~
+                  = default;
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:78:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:81:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemRespEvent() {} // For Serialization only
+    ^              ~~
+                   = default;
+/usr/local/include/sst/elements/memHierarchy/memEventBase.h:48:5: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+    setDefaults();
+    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:112:10: note: Assuming 'phase' is not equal to 0
+    if ( !phase ) {
+         ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:112:5: note: Taking false branch
+    if ( !phase ) {
+    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:118:13: note: Assuming the condition is true
+    while ( (ev = toCPU->recvInitData()) != NULL ) {
+            ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:118:5: note: Loop condition is true.  Entering loop body
+    while ( (ev = toCPU->recvInitData()) != NULL ) {
+    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:120:14: note: 'me' is non-null
+        if ( me ) {
+             ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:120:9: note: Taking true branch
+        if ( me ) {
+        ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:122:9: note: Assuming the condition is false
+          if ( me->isWriteback() || me->getCmd() == Command::GetX) {
+               ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:122:9: note: Left side of '||' is false
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:122:30: note: Assuming the condition is true
+          if ( me->isWriteback() || me->getCmd() == Command::GetX) {
+                                    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:122:4: note: Taking true branch
+          if ( me->isWriteback() || me->getCmd() == Command::GetX) {
+          ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:125:21: note: Assuming the condition is true
+                if (me->getSize() > chunkSize) {
+                    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:125:17: note: Taking true branch
+                if (me->getSize() > chunkSize) {
+                ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:131:37: note: Assuming 'i' is < 'numNewEv'
+                    for (int i = 0; i < numNewEv; ++i) {
+                                    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:131:21: note: Loop condition is true.  Entering loop body
+                    for (int i = 0; i < numNewEv; ++i) {
+                    ^
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:133:47: note: Calling constructor for 'MemEvent'
+                        MemEvent *newEv = new MemEvent(this, addr,
+                                              ^
+/usr/local/include/sst/elements/memHierarchy/memEvent.h:48:9: note: Calling constructor for 'MemEventBase'
+      : MemEventBase(src->getName(), cmd) {
+        ^
+/usr/local/include/sst/elements/memHierarchy/memEventBase.h:48:5: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+    setDefaults();
+    ^
+Applying fixes ...
+Enabled checks:
+    modernize-use-override
+
+clang-apply-replacements version 10.0.0
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -checks=-*,modernize-use-override -export-fixes /tmp/tmp2poa40cl/tmphxvkj5nb.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/app.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:77:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void init(unsigned int phase);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:62:8: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+  void finish();
+       ^
+                override
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -checks=-*,modernize-use-override -export-fixes /tmp/tmp2poa40cl/tmpix23pp3e.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:77:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void init(unsigned int phase);
+         ^
+                                  override
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -checks=-*,modernize-use-override -export-fixes /tmp/tmp2poa40cl/tmplhtmlurp.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/cpu.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:77:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void init(unsigned int phase);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/VaultSimC/cpu.h:62:8: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+  void finish();
+       ^
+                override
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/VaultSimC/* -checks=-*,modernize-use-override -export-fixes /tmp/tmp2poa40cl/tmpyljlnkxo.yaml -p=/home/sabbir/sst-elements-org/VaultSimC/build /home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp
+/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:77:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void init(unsigned int phase);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:71:8: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+  void init(unsigned int phase);
+       ^
+                                override
+Applying fixes ...
