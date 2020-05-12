@@ -16,10 +16,10 @@
 #ifndef _CPU_H
 #define _CPU_H
 
-#include "memReqEvent.h"
 #include <sst/core/component.h>
-#include <sst/core/output.h>
+#include "memReqEvent.h"
 #include <sst/core/rng/sstrng.h>
+#include <sst/core/output.h>
 
 using namespace std;
 
@@ -34,54 +34,47 @@ namespace VaultSim {
 
 class cpu : public Component {
 
-public: // functions
-  SST_ELI_REGISTER_COMPONENT(cpu, "VaultSimC", "cpu",
-                             SST_ELI_ELEMENT_VERSION(1, 0, 0),
-                             "A simple 'cpu' ", COMPONENT_CATEGORY_PROCESSOR)
+  public: // functions
+    SST_ELI_REGISTER_COMPONENT(cpu, "VaultSimC", "cpu", SST_ELI_ELEMENT_VERSION(1, 0, 0), "A simple 'cpu' ",
+                               COMPONENT_CATEGORY_PROCESSOR)
 
-  SST_ELI_DOCUMENT_PARAMS(
-      {"clock", "Simple CPU Clock Rate."},
-      {"threads", "Number of simulated threads in cpu."},
-      {"app", "Synthetic Application. 0:miniMD-like 1:phdMesh-like. (See "
-              "app.cpp for details)."},
-      {"bwlimit", "Maximum number of memory instructions issued by the "
-                  "processor per cycle. Note, each thread can only have at "
-                  "most 2 outstanding memory references at a time. "},
-      {"seed", "Optional random number generator seed. If not defined or 0, "
-               "uses srandomdev()."})
+    SST_ELI_DOCUMENT_PARAMS({"clock", "Simple CPU Clock Rate."}, {"threads", "Number of simulated threads in cpu."},
+                            {"app", "Synthetic Application. 0:miniMD-like 1:phdMesh-like. (See app.cpp for details)."},
+                            {"bwlimit",
+                             "Maximum number of memory instructions issued by the processor per cycle. Note, each "
+                             "thread can only have at most 2 outstanding memory references at a time. "},
+                            {"seed", "Optional random number generator seed. If not defined or 0, uses srandomdev()."})
 
-  SST_ELI_DOCUMENT_PORTS({"toMem",
-                          "Link to the memory system",
-                          {"memEvent", ""}})
+    SST_ELI_DOCUMENT_PORTS({"toMem", "Link to the memory system", {"memEvent", ""}})
 
-  cpu(ComponentId_t id, Params &params);
-  void finish() override;
+    cpu(ComponentId_t id, Params &params);
+    void finish() override;
 
-private: // types
-  typedef SST::Link memChan_t;
-  using memSet_t = set<uint64_t>;
-  using thrSet_t = vector<memSet_t>;
-  using coreVec_t = vector<int>;
+  private: // types
+    typedef SST::Link memChan_t;
+    using memSet_t = set<uint64_t>;
+    using thrSet_t = vector<memSet_t>;
+    using coreVec_t = vector<int>;
 
-private:
-  cpu(const cpu &c);
-  bool clock(Cycle_t);
+  private:
+    cpu(const cpu &c);
+    bool clock(Cycle_t);
 
-  SST::RNG::SSTRandom *rng;
-  memChan_t *toMem;
-  unsigned int outstanding;
-  unsigned long long memOps;
-  unsigned long long inst;
-  int threads;
-  int app;
-  int bwlimit;
-  thrSet_t thrOutstanding;
-  coreVec_t coreAddr;
+    SST::RNG::SSTRandom *rng;
+    memChan_t *toMem;
+    unsigned int outstanding;
+    unsigned long long memOps;
+    unsigned long long inst;
+    int threads;
+    int app;
+    int bwlimit;
+    thrSet_t thrOutstanding;
+    coreVec_t coreAddr;
 
-  MemReqEvent *getInst(int cacheLevel, int app, int core);
+    MemReqEvent *getInst(int cacheLevel, int app, int core);
 
-protected:
-  Output &out;
+  protected:
+    Output &out;
 };
 
 } // namespace VaultSim
